@@ -16,7 +16,7 @@ def hello():
 
 @app.route("/get", methods=["GET", "POST"])
 def chat():
-    msg = request.form["msg"]
+    msg = request.args["msg"]
     input = msg
     result = get_Chat_response(input)
     data = {'message':msg,'response':result}
