@@ -10,9 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-           
+            TabView {
+                FunMakerBot()
+                    .tabItem {
+                        Image(systemName: "message.and.waveform.fill" )
+                        Text("chat")
+                    }
+                
+                FunMakerImageGenerator()
+                    .tabItem {
+                        Image(systemName: "text.below.photo")
+                        Text("Image")
+                    }
+            }
         }
-        .padding()
+        
     }
 }
 

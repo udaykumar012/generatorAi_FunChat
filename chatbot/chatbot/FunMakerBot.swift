@@ -13,16 +13,7 @@ struct FunMakerBot:  View {
     @ObservedObject var viewModel = ChatViewModel()
     var body: some View {
         VStack {
-            HStack {
-                Text("FunMakerBot")
-                    .font(.largeTitle)
-                    .bold()
-                
-                Image(systemName: "bubble.left.fill")
-                    .font(.system(size: 26))
-                    .foregroundColor(Color.blue)
-            }
-            
+            HeaderView(Name: "FunMakerBot", logo:"message.and.waveform.fill" )
             ScrollView {
                 ForEach(messages, id: \.self) { message in
                     // If the message contains [USER], that means it's us

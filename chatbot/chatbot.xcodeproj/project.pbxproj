@@ -13,8 +13,8 @@
 		A77EA44C2A4C6B7100092157 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77EA44B2A4C6B7100092157 /* Preview Assets.xcassets */; };
 		A77EA4532A4C6BE300092157 /* FunMakerBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77EA4522A4C6BE300092157 /* FunMakerBot.swift */; };
 		A77EA4552A4C6CE500092157 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77EA4542A4C6CE500092157 /* ChatModel.swift */; };
-		A77EA4582A4C6F6D00092157 /* tmp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77EA4572A4C6F6D00092157 /* tmp.swift */; };
-		A77EA45A2A4C6F7700092157 /* tmpview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77EA4592A4C6F7700092157 /* tmpview.swift */; };
+		A77EA45C2A4C83F000092157 /* FunMakerImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77EA45B2A4C83F000092157 /* FunMakerImageGenerator.swift */; };
+		A77EA45E2A4C868A00092157 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77EA45D2A4C868A00092157 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +25,8 @@
 		A77EA44B2A4C6B7100092157 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A77EA4522A4C6BE300092157 /* FunMakerBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunMakerBot.swift; sourceTree = "<group>"; };
 		A77EA4542A4C6CE500092157 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
-		A77EA4572A4C6F6D00092157 /* tmp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmp.swift; sourceTree = "<group>"; };
-		A77EA4592A4C6F7700092157 /* tmpview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmpview.swift; sourceTree = "<group>"; };
+		A77EA45B2A4C83F000092157 /* FunMakerImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunMakerImageGenerator.swift; sourceTree = "<group>"; };
+		A77EA45D2A4C868A00092157 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,9 @@
 				A77EA4442A4C6B7000092157 /* chatbotApp.swift */,
 				A77EA4462A4C6B7000092157 /* ContentView.swift */,
 				A77EA4522A4C6BE300092157 /* FunMakerBot.swift */,
-				A77EA4542A4C6CE500092157 /* ChatModel.swift */,
-				A77EA4562A4C6F6100092157 /* tmp */,
+				A77EA45D2A4C868A00092157 /* HeaderView.swift */,
+				A77EA45B2A4C83F000092157 /* FunMakerImageGenerator.swift */,
+				A77EA4562A4C6F6100092157 /* Models */,
 				A77EA4482A4C6B7100092157 /* Assets.xcassets */,
 				A77EA44A2A4C6B7100092157 /* Preview Content */,
 			);
@@ -78,13 +79,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A77EA4562A4C6F6100092157 /* tmp */ = {
+		A77EA4562A4C6F6100092157 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A77EA4572A4C6F6D00092157 /* tmp.swift */,
-				A77EA4592A4C6F7700092157 /* tmpview.swift */,
+				A77EA4542A4C6CE500092157 /* ChatModel.swift */,
 			);
-			path = tmp;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,11 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77EA4582A4C6F6D00092157 /* tmp.swift in Sources */,
+				A77EA45C2A4C83F000092157 /* FunMakerImageGenerator.swift in Sources */,
+				A77EA45E2A4C868A00092157 /* HeaderView.swift in Sources */,
 				A77EA4472A4C6B7000092157 /* ContentView.swift in Sources */,
 				A77EA4532A4C6BE300092157 /* FunMakerBot.swift in Sources */,
 				A77EA4452A4C6B7000092157 /* chatbotApp.swift in Sources */,
-				A77EA45A2A4C6F7700092157 /* tmpview.swift in Sources */,
 				A77EA4552A4C6CE500092157 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
