@@ -74,10 +74,12 @@ struct FunMakerImageGenerator:View{
         guard let url = URL(string: "https://api-inference.huggingface.co/models/prompthero/openjourney") else {
             return
         }
-
+        //auth token from hugging face
+        let authToken = "Bear***er hf_abc********"
+        print("your auth token : \(authToken) verify it!!!")
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.setValue("Bearer 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", forHTTPHeaderField: "Authorization")
+        request.setValue(authToken, forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
         do {
